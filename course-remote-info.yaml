@@ -3,11 +3,11 @@ hyperskill_project:
   ide_files: https://hyperskill.org/api/projects/91/additional-files/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: "Thu, 21 Aug 2025 15:46:34 UTC"
+update_date: "Wed, 01 Oct 2025 06:29:35 UTC"
 stages:
   - id: 504
     step: 8252
-    is_completed: true
+    is_completed: false
   - id: 505
     step: 8253
     is_completed: false
@@ -65,10 +65,10 @@ topics:
       theory_id: 5357
     - title: HTTP URL
       theory_id: 6740
-    - title: Introduction to Spring Web MVC
-      theory_id: 13611
     - title: HTTP messages
       theory_id: 6752
+    - title: Introduction to Spring Web MVC
+      theory_id: 13611
     - title: REST
       theory_id: 7834
     - title: Postman
@@ -155,10 +155,12 @@ topics:
       theory_id: 3570
     - title: Exception handling
       theory_id: 3552
-    - title: Build tools
-      theory_id: 4284
+    - title: Introduction to Linux
+      theory_id: 9526
     - title: JAR files
       theory_id: 4311
+    - title: Build tools
+      theory_id: 4284
     - title: "Gradle: overview"
       theory_id: 5075
     - title: Basic project with Gradle
@@ -169,9 +171,7 @@ topics:
       theory_id: 35988
     - title: "Dependency management: repositories"
       theory_id: 37189
-    - title: External information resources
-      theory_id: 6216
-    - title: Introduction to Full-Stack development
+    - title: Introduction to full-stack development
       theory_id: 13931
     - title: Libraries
       theory_id: 8504
@@ -189,14 +189,14 @@ topics:
       theory_id: 9332
     - title: Processes and threads
       theory_id: 9420
+    - title: Introduction to API
+      theory_id: 17007
     - title: Debugging overview
       theory_id: 14368
     - title: "Hashing: overview"
       theory_id: 9831
     - title: JSON
       theory_id: 6854
-    - title: Introduction to API
-      theory_id: 17007
     - title: Simplistic hash functions
       theory_id: 40136
     - title: Hash function
@@ -322,7 +322,7 @@ topics:
       theory_id: 7545
     - title: Dependency injection
       theory_id: 20580
-    - title: Class Diagrams
+    - title: Class diagrams
       theory_id: 15588
     - title: Code organization. Design principles
       theory_id: 8956
@@ -336,7 +336,7 @@ topics:
       theory_id: 13334
     - title: Creational design patterns
       theory_id: 16251
-    - title: Factory Method and Prototype
+    - title: Factory method and prototype
       theory_id: 16430
   2:
     - title: Bean validation
@@ -372,10 +372,10 @@ topics:
       theory_id: 18086
     - title: What are databases
       theory_id: 8497
+    - title: Relational data model
+      theory_id: 13785
     - title: "SQL: structured query language"
       theory_id: 7054
-    - title: Relational Data Model
-      theory_id: 13785
     - title: XML
       theory_id: 6901
     - title: Data and object mapping
@@ -433,7 +433,7 @@ topics:
       theory_id: 32430
     - title: Getting authenticated user details
       theory_id: 16710
-    - title: Basic data types
+    - title: Basic data types in SQL
       theory_id: 7123
     - title: Literals
       theory_id: 7400
@@ -455,7 +455,7 @@ topics:
       theory_id: 9059
     - title: Basic DELETE statement
       theory_id: 9075
-    - title: Authentication and Authorization
+    - title: Authentication and authorization
       theory_id: 14219
     - title: Introduction to transactions
       theory_id: 12144
