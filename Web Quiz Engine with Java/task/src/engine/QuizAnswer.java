@@ -1,10 +1,10 @@
 package engine;
 
-public class Answer {
+public class QuizAnswer {
     boolean success;
     String feedback;
 
-    public Answer(boolean success) {
+    public QuizAnswer(boolean success) {
         this.success = success;
         if(success)
             this.feedback = "Congratulations, you're right!";

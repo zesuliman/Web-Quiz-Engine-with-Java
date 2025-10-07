@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://hyperskill.org/api/projects/91/additional-files/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: "Wed, 01 Oct 2025 06:29:35 UTC"
+update_date: "Tue, 07 Oct 2025 04:44:58 UTC"
 stages:
   - id: 504
     step: 8252
@@ -191,12 +191,12 @@ topics:
       theory_id: 9420
     - title: Introduction to API
       theory_id: 17007
+    - title: JSON
+      theory_id: 6854
     - title: Debugging overview
       theory_id: 14368
     - title: "Hashing: overview"
       theory_id: 9831
-    - title: JSON
-      theory_id: 6854
     - title: Simplistic hash functions
       theory_id: 40136
     - title: Hash function
