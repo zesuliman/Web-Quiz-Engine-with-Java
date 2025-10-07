@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">8.104s</div>
+<div class="counter">10.492s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,75 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="start"></a>
-<h3 class="failures">start</h3>
-<span class="code">
-<pre>java.lang.AssertionError: Wrong answer in test #1
-
-GET /api/quizzes should respond with status code 200, responded: 404
-
-Response body:
-
-{&quot;timestamp&quot;:&quot;2025-10-07T05:01:01.642+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;No static resource quizzes.&quot;,&quot;path&quot;:&quot;/api/quizzes&quot;}
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:208)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -140,13 +78,13 @@ Response body:
 </tr>
 </thead>
 <tr>
-<td class="failures">start</td>
-<td class="failures">8.104s</td>
-<td class="failures">failed</td>
+<td class="success">start</td>
+<td class="success">10.492s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>?[1;31m
@@ -160,37 +98,90 @@ Start test 1?[0m
 ?[0m?[0;34m =========|_|==============|___/=/_/_/_/
 ?[0m?[0;34m :: Spring Boot ::                (v3.2.0)
 ?[0m?[0;34m
-?[0m?[0;34m2025-10-07T08:00:54.266+03:00  INFO 23836 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine using Java 21.0.7 with PID 23836 (started by Admin in C:\Users\Admin\Web Quiz Engine with Java\Web Quiz Engine with Java\task)
-?[0m?[0;34m2025-10-07T08:00:54.269+03:00  INFO 23836 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to 1 default profile: &quot;default&quot;
-?[0m?[0;34m2025-10-07T08:00:55.416+03:00  INFO 23836 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-?[0m?[0;34m2025-10-07T08:00:55.468+03:00  INFO 23836 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
-?[0m?[0;34m2025-10-07T08:00:56.518+03:00  INFO 23836 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8889 (http)
-?[0m?[0;34m2025-10-07T08:00:56.534+03:00  INFO 23836 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-?[0m?[0;34m2025-10-07T08:00:56.535+03:00  INFO 23836 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-?[0m?[0;34m2025-10-07T08:00:56.632+03:00  INFO 23836 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-?[0m?[0;34m2025-10-07T08:00:56.634+03:00  INFO 23836 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2319 ms
-?[0m?[0;34m2025-10-07T08:00:57.171+03:00  INFO 23836 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-?[0m?[0;34m2025-10-07T08:00:57.265+03:00  INFO 23836 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
-?[0m?[0;34m2025-10-07T08:00:57.316+03:00  INFO 23836 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-?[0m?[0;34m2025-10-07T08:00:57.658+03:00  INFO 23836 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-?[0m?[0;34m2025-10-07T08:00:57.690+03:00  INFO 23836 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-?[0m?[0;34m2025-10-07T08:00:58.115+03:00  INFO 23836 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d3b4e09
-?[0m?[0;34m2025-10-07T08:00:58.120+03:00  INFO 23836 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-?[0m?[0;34m2025-10-07T08:00:59.142+03:00  INFO 23836 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+?[0m?[0;34m2025-10-07T08:18:22.623+03:00  INFO 12984 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine using Java 21.0.7 with PID 12984 (started by Admin in C:\Users\Admin\Web Quiz Engine with Java\Web Quiz Engine with Java\task)
+?[0m?[0;34m2025-10-07T08:18:22.626+03:00  INFO 12984 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+?[0m?[0;34m2025-10-07T08:18:23.854+03:00  INFO 12984 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+?[0m?[0;34m2025-10-07T08:18:23.914+03:00  INFO 12984 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+?[0m?[0;34m2025-10-07T08:18:25.193+03:00  INFO 12984 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8889 (http)
+?[0m?[0;34m2025-10-07T08:18:25.204+03:00  INFO 12984 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+?[0m?[0;34m2025-10-07T08:18:25.204+03:00  INFO 12984 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+?[0m?[0;34m2025-10-07T08:18:25.282+03:00  INFO 12984 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+?[0m?[0;34m2025-10-07T08:18:25.283+03:00  INFO 12984 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2611 ms
+?[0m?[0;34m2025-10-07T08:18:25.806+03:00  INFO 12984 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+?[0m?[0;34m2025-10-07T08:18:25.905+03:00  INFO 12984 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+?[0m?[0;34m2025-10-07T08:18:25.959+03:00  INFO 12984 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+?[0m?[0;34m2025-10-07T08:18:26.351+03:00  INFO 12984 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+?[0m?[0;34m2025-10-07T08:18:26.394+03:00  INFO 12984 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+?[0m?[0;34m2025-10-07T08:18:26.882+03:00  INFO 12984 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62f7d7bd
+?[0m?[0;34m2025-10-07T08:18:26.885+03:00  INFO 12984 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+?[0m?[0;34m2025-10-07T08:18:27.886+03:00  INFO 12984 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 ?[0m?[0;34mHibernate: drop table if exists quiz
 ?[0m?[0;34mHibernate: drop table if exists quiz_id_generator
 ?[0m?[0;34mHibernate: create table quiz (answer integer, id bigint not null, text varchar(255), title varchar(255), options varbinary(255), primary key (id)) engine=InnoDB
 ?[0m?[0;34mHibernate: create table quiz_id_generator (next_val bigint) engine=InnoDB
 ?[0m?[0;34mHibernate: insert into quiz_id_generator values ( 1 )
-?[0m?[0;34m2025-10-07T08:00:59.298+03:00  INFO 23836 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-?[0m?[0;34m2025-10-07T08:00:59.788+03:00  WARN 23836 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-?[0m?[0;34m2025-10-07T08:01:01.044+03:00  INFO 23836 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-?[0m?[0;34m2025-10-07T08:01:01.202+03:00  INFO 23836 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8889 (http) with context path '/api'
-?[0m?[0;34m2025-10-07T08:01:01.223+03:00  INFO 23836 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 7.363 seconds (process running for 8.288)
-?[0;34m2025-10-07T08:01:01.573+03:00  INFO 23836 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-?[0m?[0;34m2025-10-07T08:01:01.574+03:00  INFO 23836 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-?[0m?[0;34m2025-10-07T08:01:01.576+03:00  INFO 23836 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-?[0m</pre>
+?[0m?[0;34m2025-10-07T08:18:28.019+03:00  INFO 12984 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+?[0m?[0;34m2025-10-07T08:18:28.528+03:00  WARN 12984 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+?[0m?[0;34m2025-10-07T08:18:30.080+03:00  INFO 12984 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+?[0m?[0;34m2025-10-07T08:18:30.281+03:00  INFO 12984 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8889 (http) with context path '/api'
+?[0m?[0;34m2025-10-07T08:18:30.319+03:00  INFO 12984 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 8.132 seconds (process running for 9.066)
+?[0;34m2025-10-07T08:18:31.097+03:00  INFO 12984 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+?[0m?[0;34m2025-10-07T08:18:31.098+03:00  INFO 12984 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+?[0m?[0;34m2025-10-07T08:18:31.101+03:00  INFO 12984 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+?[0m?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0
+?[0m?[1;31m
+Start test 2?[0m
+?[0;34mHibernate: select next_val as id_val from quiz_id_generator for update
+?[0m?[0;34mHibernate: update quiz_id_generator set next_val= ? where next_val=?
+?[0m?[0;34mHibernate: insert into quiz (answer,options,text,title,id) values (?,?,?,?,?)
+?[1;31m
+Start test 3?[0m
+?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0 where q1_0.id=?
+?[1;31m
+Start test 4?[0m
+?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0 where q1_0.id=?
+?[1;31m
+Start test 5?[0m
+?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0
+?[1;31m
+Start test 6?[0m
+?[0;34mHibernate: select next_val as id_val from quiz_id_generator for update
+?[0m?[0;34mHibernate: update quiz_id_generator set next_val= ? where next_val=?
+?[0m?[0;34mHibernate: insert into quiz (answer,options,text,title,id) values (?,?,?,?,?)
+?[1;31m
+Start test 7?[0m
+?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0 where q1_0.id=?
+?[1;31m
+Start test 8?[0m
+?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0 where q1_0.id=?
+?[1;31m
+Start test 9?[0m
+?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0
+?[1;31m
+Start test 10?[0m
+?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0 where q1_0.id=?
+?[1;31m
+Start test 11?[0m
+?[0m?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0 where q1_0.id=?
+?[1;31m
+Start test 12?[0m
+?[0m?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0 where q1_0.id=?
+?[1;31m
+Start test 13?[0m
+?[0m?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0 where q1_0.id=?
+?[1;31m
+Start test 14?[0m
+?[0m?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0 where q1_0.id=?
+?[1;31m
+Start test 15?[0m
+?[0m?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0 where q1_0.id=?
+?[1;31m
+Start test 16?[0m
+?[0m?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0 where q1_0.id=?
+?[1;31m
+Start test 17?[0m
+?[0m?[0;34mHibernate: select q1_0.id,q1_0.answer,q1_0.options,q1_0.text,q1_0.title from quiz q1_0 where q1_0.id=?
+</pre>
 </span>
 </div>
 </div>
@@ -201,7 +192,7 @@ Start test 1?[0m
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at Oct 7, 2025, 8:01:01 AM</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at Oct 7, 2025, 8:18:32 AM</p>
 </div>
 </div>
 </body>

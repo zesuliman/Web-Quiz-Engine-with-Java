@@ -22,15 +22,8 @@ files:
     visible: true
     learner_created: true
 feedback_link: https://hyperskill.org/projects/91/stages/505/implement#comment
-status: Failed
+status: Solved
 feedback:
-  message: |-
-    Wrong answer in test #1
-
-    GET /api/quizzes should respond with status code 200, responded: 404
-
-    Response body:
-
-    {&quot;timestamp&quot;:&quot;2025-10-07T05:01:01.642+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;No static resource quizzes.&quot;,&quot;path&quot;:&quot;/api/quizzes&quot;}
-  time: "Tue, 07 Oct 2025 05:01:01 UTC"
+  message: Congratulations!
+  time: "Tue, 07 Oct 2025 05:18:32 UTC"
 record: 1
