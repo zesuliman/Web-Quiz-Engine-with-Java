@@ -18,22 +18,19 @@ files:
   - name: src/engine/Quiz.java
     visible: true
     learner_created: true
+  - name: src/engine/WebQuizEngineController.java
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/91/stages/505/implement#comment
 status: Failed
 feedback:
-  message: "Exception in test #1\n\nCannot start Spring application\n\norg.springframework.context.ApplicationContextException:\
-    \ Failed to start bean &#39;webServerStartStop&#39;\n\tat org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:287)\n\
-    \tat org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:467)\n\
-    \tat java.base/java.lang.Iterable.forEach(Iterable.java:75)\n\tat org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:256)\n\
-    \tat org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:201)\n\
-    \tat org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:965)\n\
-    \tat org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619)\n\
-    \tat org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)\n\
-    \tat org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)\n\
-    \tat org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)\n\
-    \tat org.springframework.boot.SpringApplication.run(SpringApplication.java:323)\n\
-    \tat org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)\n\
-    \tat org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)\n\
-    \tat engine.WebQuizEngine.main(WebQuizEngine.java:27)"
-  time: "Tue, 07 Oct 2025 04:58:45 UTC"
+  message: |-
+    Wrong answer in test #1
+
+    GET /api/quizzes should respond with status code 200, responded: 404
+
+    Response body:
+
+    {&quot;timestamp&quot;:&quot;2025-10-07T05:01:01.642+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;No static resource quizzes.&quot;,&quot;path&quot;:&quot;/api/quizzes&quot;}
+  time: "Tue, 07 Oct 2025 05:01:01 UTC"
 record: 1

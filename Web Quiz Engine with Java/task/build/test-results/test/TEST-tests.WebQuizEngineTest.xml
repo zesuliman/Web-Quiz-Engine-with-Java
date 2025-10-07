@@ -1,26 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.WebQuizEngineTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-10-07T04:58:37" hostname="LAPTOP-PE8210UE" time="7.498">
+<testsuite name="tests.WebQuizEngineTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-10-07T05:00:53" hostname="LAPTOP-PE8210UE" time="8.104">
   <properties/>
-  <testcase name="start" classname="tests.WebQuizEngineTest" time="7.498">
-    <failure message="java.lang.AssertionError: Exception in test #1&#10;&#10;Cannot start Spring application&#10;&#10;org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'&#10;&#9;at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:287)&#10;&#9;at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:467)&#10;&#9;at java.base/java.lang.Iterable.forEach(Iterable.java:75)&#10;&#9;at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:256)&#10;&#9;at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:201)&#10;&#9;at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:965)&#10;&#9;at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619)&#10;&#9;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)&#10;&#9;at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)&#10;&#9;at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)&#10;&#9;at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)&#10;&#9;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)&#10;&#9;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)&#10;&#9;at engine.WebQuizEngine.main(WebQuizEngine.java:27)" type="java.lang.AssertionError">java.lang.AssertionError: Exception in test #1
+  <testcase name="start" classname="tests.WebQuizEngineTest" time="8.104">
+    <failure message="java.lang.AssertionError: Wrong answer in test #1&#10;&#10;GET /api/quizzes should respond with status code 200, responded: 404&#10;&#10;Response body:&#10;&#10;{&quot;timestamp&quot;:&quot;2025-10-07T05:01:01.642+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;No static resource quizzes.&quot;,&quot;path&quot;:&quot;/api/quizzes&quot;}" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #1
 
-Cannot start Spring application
+GET /api/quizzes should respond with status code 200, responded: 404
 
-org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:287)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:467)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:256)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:201)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:965)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
-	at engine.WebQuizEngine.main(WebQuizEngine.java:27)
+Response body:
+
+{&quot;timestamp&quot;:&quot;2025-10-07T05:01:01.642+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;No static resource quizzes.&quot;,&quot;path&quot;:&quot;/api/quizzes&quot;}
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:208)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -76,52 +64,36 @@ Start test 1?[0m
 ?[0m?[0;34m =========|_|==============|___/=/_/_/_/
 ?[0m?[0;34m :: Spring Boot ::                (v3.2.0)
 ?[0m?[0;34m
-?[0m?[0;34m2025-10-07T07:58:38.278+03:00  INFO 25044 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine using Java 21.0.7 with PID 25044 (started by Admin in C:\Users\Admin\Web Quiz Engine with Java\Web Quiz Engine with Java\task)
-?[0m?[0;34m2025-10-07T07:58:38.280+03:00  INFO 25044 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to 1 default profile: "default"
-?[0m?[0;34m2025-10-07T07:58:39.394+03:00  INFO 25044 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-?[0m?[0;34m2025-10-07T07:58:39.446+03:00  INFO 25044 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
-?[0m?[0;34m2025-10-07T07:58:40.434+03:00  INFO 25044 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8889 (http)
-?[0m?[0;34m2025-10-07T07:58:40.444+03:00  INFO 25044 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-?[0m?[0;34m2025-10-07T07:58:40.445+03:00  INFO 25044 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-?[0m?[0;34m2025-10-07T07:58:40.515+03:00  INFO 25044 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-?[0m?[0;34m2025-10-07T07:58:40.516+03:00  INFO 25044 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2195 ms
-?[0m?[0;34m2025-10-07T07:58:40.970+03:00  INFO 25044 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-?[0m?[0;34m2025-10-07T07:58:41.055+03:00  INFO 25044 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
-?[0m?[0;34m2025-10-07T07:58:41.102+03:00  INFO 25044 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-?[0m?[0;34m2025-10-07T07:58:41.449+03:00  INFO 25044 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-?[0m?[0;34m2025-10-07T07:58:41.485+03:00  INFO 25044 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-?[0m?[0;34m2025-10-07T07:58:41.904+03:00  INFO 25044 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@163fbbc9
-?[0m?[0;34m2025-10-07T07:58:41.907+03:00  INFO 25044 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-?[0m?[0;34m2025-10-07T07:58:42.927+03:00  INFO 25044 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+?[0m?[0;34m2025-10-07T08:00:54.266+03:00  INFO 23836 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine using Java 21.0.7 with PID 23836 (started by Admin in C:\Users\Admin\Web Quiz Engine with Java\Web Quiz Engine with Java\task)
+?[0m?[0;34m2025-10-07T08:00:54.269+03:00  INFO 23836 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to 1 default profile: "default"
+?[0m?[0;34m2025-10-07T08:00:55.416+03:00  INFO 23836 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+?[0m?[0;34m2025-10-07T08:00:55.468+03:00  INFO 23836 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+?[0m?[0;34m2025-10-07T08:00:56.518+03:00  INFO 23836 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8889 (http)
+?[0m?[0;34m2025-10-07T08:00:56.534+03:00  INFO 23836 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+?[0m?[0;34m2025-10-07T08:00:56.535+03:00  INFO 23836 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+?[0m?[0;34m2025-10-07T08:00:56.632+03:00  INFO 23836 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+?[0m?[0;34m2025-10-07T08:00:56.634+03:00  INFO 23836 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2319 ms
+?[0m?[0;34m2025-10-07T08:00:57.171+03:00  INFO 23836 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+?[0m?[0;34m2025-10-07T08:00:57.265+03:00  INFO 23836 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+?[0m?[0;34m2025-10-07T08:00:57.316+03:00  INFO 23836 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+?[0m?[0;34m2025-10-07T08:00:57.658+03:00  INFO 23836 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+?[0m?[0;34m2025-10-07T08:00:57.690+03:00  INFO 23836 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+?[0m?[0;34m2025-10-07T08:00:58.115+03:00  INFO 23836 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d3b4e09
+?[0m?[0;34m2025-10-07T08:00:58.120+03:00  INFO 23836 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+?[0m?[0;34m2025-10-07T08:00:59.142+03:00  INFO 23836 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 ?[0m?[0;34mHibernate: drop table if exists quiz
 ?[0m?[0;34mHibernate: drop table if exists quiz_id_generator
 ?[0m?[0;34mHibernate: create table quiz (answer integer, id bigint not null, text varchar(255), title varchar(255), options varbinary(255), primary key (id)) engine=InnoDB
 ?[0m?[0;34mHibernate: create table quiz_id_generator (next_val bigint) engine=InnoDB
 ?[0m?[0;34mHibernate: insert into quiz_id_generator values ( 1 )
-?[0m?[0;34m2025-10-07T07:58:43.060+03:00  INFO 25044 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-?[0m?[0;34m2025-10-07T07:58:43.562+03:00  WARN 25044 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-?[0m?[0;34m2025-10-07T07:58:44.916+03:00  INFO 25044 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-?[0m?[0;34m2025-10-07T07:58:45.070+03:00  WARN 25044 --- [    Test worker] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-?[0m?[0;34m2025-10-07T07:58:45.072+03:00  INFO 25044 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-?[0m?[0;34m2025-10-07T07:58:45.077+03:00  INFO 25044 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-?[0m?[0;34m2025-10-07T07:58:45.091+03:00  INFO 25044 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-?[0m?[0;34m2025-10-07T07:58:45.119+03:00  INFO 25044 --- [    Test worker] .s.b.a.l.ConditionEvaluationReportLogger : 
-?[0m?[0;34m
-?[0m?[0;34mError starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-?[0m?[0;34m2025-10-07T07:58:45.147+03:00 ERROR 25044 --- [    Test worker] o.s.b.d.LoggingFailureAnalysisReporter   : 
-?[0m?[0;34m
-?[0m?[0;34m***************************
-?[0m?[0;34mAPPLICATION FAILED TO START
-?[0m?[0;34m***************************
-?[0m?[0;34m
-?[0m?[0;34mDescription:
-?[0m?[0;34m
-?[0m?[0;34mWeb server failed to start. Port 8889 was already in use.
-?[0m?[0;34m
-?[0m?[0;34mAction:
-?[0m?[0;34m
-?[0m?[0;34mIdentify and stop the process that's listening on port 8889 or configure this application to listen on another port.
-?[0m?[0;34m
+?[0m?[0;34m2025-10-07T08:00:59.298+03:00  INFO 23836 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+?[0m?[0;34m2025-10-07T08:00:59.788+03:00  WARN 23836 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+?[0m?[0;34m2025-10-07T08:01:01.044+03:00  INFO 23836 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+?[0m?[0;34m2025-10-07T08:01:01.202+03:00  INFO 23836 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8889 (http) with context path '/api'
+?[0m?[0;34m2025-10-07T08:01:01.223+03:00  INFO 23836 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 7.363 seconds (process running for 8.288)
+?[0;34m2025-10-07T08:01:01.573+03:00  INFO 23836 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+?[0m?[0;34m2025-10-07T08:01:01.574+03:00  INFO 23836 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+?[0m?[0;34m2025-10-07T08:01:01.576+03:00  INFO 23836 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 ?[0m]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
