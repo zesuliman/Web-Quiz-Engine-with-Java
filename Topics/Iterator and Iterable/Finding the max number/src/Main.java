@@ -5,6 +5,7 @@ public class Main {
 
     public static int findMaxByIterator(Iterator<Integer> iterator) {
         // write your code here
+        return 1;
     }
 
     /* Do not change code below */
