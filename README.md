@@ -1,7 +1,6 @@
 # 🧠 Web Quiz Engine (Java, Spring & MySQL)
 
-This project is a lightweight, interactive web-based quiz engine that allows users to generate customized questions, logical puzzles, web quests, or online tests. 
-
+## This project is a lightweight, interactive web-based quiz engine that allows users to generate customized questions, logical puzzles, web quests, or online tests. 
 Users can create quiz templates, populate them with questions and answers, publish the quiz, and share it with others to take and view their final results.
 
 ## ✨ Main Features
@@ -10,9 +9,6 @@ Users can create quiz templates, populate them with questions and answers, publi
 * Specify the correct answer and logic for each question.
 * Securely share quizzes with other users and allow them to submit answers.
 * Calculate the overall score and statistcs for a specific quiz.
-
-## 📺 Watch the Full Series!
-
 
 ## ⚙️ Core Engineering Challenges
 * **Dynamic Question Rendering:** Automatically loads questions based on the configuration or display preferences set by the creator.
@@ -27,14 +23,11 @@ Users can create quiz templates, populate them with questions and answers, publi
 * **Database:** MySQL
 * **Deployment:** Docker
   
-## 🚀 Getting Started
-
 ### Prerequisites
 Make sure you have **Docker** and **Docker Compose** installed on your local machine.
 
 ### Installation
 The easiest way to see how this works is to launch the app instantly using Docker:
-
 1. Download the `docker-compose.yml` file provided in the repository.
 2. Open your terminal, navigate to the folder containing the file, and run:
    ```bash
