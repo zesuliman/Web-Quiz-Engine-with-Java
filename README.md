@@ -1,40 +1,49 @@
-# Web Quiz Engine based on Java, Spring, and MySQL
+# 🧠 Web Quiz Engine (Java, Spring & MySQL)
 
-## This project is a Web Quiz Engine that allows users to generate customized web quizzes, web quests, or tests. Users can create a quiz template, add questions and answers, publish the quiz, allow viewers to answer the questions and see the final results.
+This project is a lightweight, interactive web-based quiz engine that allows users to generate customized questions, logical puzzles, web quests, or online tests. 
 
-The main features provided by the project are as follows:
+Users can create quiz templates, add questions with their answers, publish the quiz, allow viewers to answer the questions, and see the final results.
 
-- Create a custom web based quiz.
-- Edit the quiz later to add new questions.
-- Specify the correct answer for each question in the quiz.
-- Share the quiz with other users and allow them to answer it.
+## ✨ Main Features
+* Create a custom web-based quiz.
+* Edit the quiz later to add new questions.
+* Specify the correct answer for each question in the quiz.
+* Share the quiz with other users and allow them to answer it.
 
+## 📺 Watch the Full Series!
+[![Watch the series](http://img.youtube.com/vi/SiGxu2N9ndU/mqdefault.jpg)](https://www.youtube.com/playlist?list=PLSvCAHoiHC_rqKbcu1ummWVpLTDBNZHH7)
 
-## Watch the full series!
+## ⚙️ Core Engineering Challenges
+* **Dynamic Question Rendering:** Automatically loads questions based on the configuration or display preferences decided by the creator.
+* **Real-Time Scoring:** Calculates and displays the user's score instantly at the end of the quiz.
+* **Customizable Quiz Banks:** Easily add new questions, hints, and answers during or after creation.
+* **Responsive Design:** Works smoothly on both desktop and mobile browsers.
 
-<a href="https://www.youtube.com/playlist?list=PLSvCAHoiHC_rqKbcu1ummWVpLTDBNZHH7" target="_blank">
-<img src="http://img.youtube.com/vi/SiGxu2N9ndU/mqdefault.jpg" alt="Watch the series" width="240" height="180" border="10" />
-</a>
+## 🛠️ Tech Stack
+* **Frontend:** HTML, Bootstrap, TypeScript
+* **Backend:** Java, Spring Boot
+* **Database:** MySQL
+  
+## 🚀 Getting Started
 
-## How to install this applicaton on your computer
+### Prerequisites
+Make sure you have **Java** installed on your local machine.
 
-The easiest way to see how this works is to watch the series, but here's the short version.
+### Installation
+The easiest way to see how this works is to watch the series, but here is the short version:
 
-1. download the JAR file.
-2. 
+1. Download the JAR file.
+2. Create the schema in your MySQL database using the provided schema file.
+3. Connect the application to the database.
 
-## How to tweak this project for your own uses
+## 💡 How to Tweak This Project for Your Own Uses
+Since this is an open-source project, I encourage you to clone and rename this project to use for your own purposes. It is a great starter boilerplate!
 
-Since this is an open source project, I'd encourage you to clone and rename this project to use for your own puposes. It's a good starter boilerplate
+## 🐛 Find a Bug?
+If you found an issue or would like to submit an improvement to this project, please submit an issue using the **Issues** tab above. If you would like to submit a Pull Request (PR) with a fix, please reference the issue you created!
 
-## Find a bug?
+## 🚧 Known Issues (Work in Progress)
+* The UI is not entirely complete. I am currently working on the remaining pages.
 
-If you found an issue or would like to submit an improvement to this project, please submit an issue using the issues tab above. If you would like to submit a PR with a fix, reference the issue you created!
-
-## Known issues (Work in progress)
-
-The UI is not complete. I am working on the remaining pages.
-
-## Like this project?
-
-If you are feeling generous, buy me a coffee! https://buymeacoffee.com/zeinab.ibrahim?new=1
+## ☕ Like this project?
+If you are feeling generous, [buy me a coffee!](https://buymeacoffee.com/zeinab.ibrahim?new=1)
